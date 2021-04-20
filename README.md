@@ -1,5 +1,5 @@
 # shoppingreceipt-java
 
-Developed by IntelliJ IDEA Community Edition
+Developed using IntelliJ IDEA Community Edition
 
 Main.java is the driver class
