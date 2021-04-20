@@ -2,4 +2,4 @@
 
 Developed using IntelliJ IDEA Community Edition
 
-Main.java is the driver class
+Main.java is the driver program
