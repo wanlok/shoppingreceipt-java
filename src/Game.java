@@ -1,6 +1,6 @@
 public class Game {
 
-    private Data data = new Data();
+    protected Data data = new Data();
     private Input input = new Input();
 
     private void input() {
@@ -21,7 +21,7 @@ public class Game {
         } while ("Y".equals(s) || "y".equals(s));
     }
 
-    private void output() {
+    protected void output() {
         int aLength = 0;
         int bLength = 0;
         int cLength = 0;
@@ -77,27 +77,7 @@ public class Game {
         output();
     }
 
-    public void testcase1() {
-        data.prepare();
-        data.setTargetLocation(data.searchLocations("CA"));
-        data.addProduct("book", 17.99, 1);
-        data.addProduct("potato chips", 3.99, 1);
-        output();
-    }
-
-    public void testcase2() {
-        data.prepare();
-        data.setTargetLocation(data.searchLocations("NY"));
-        data.addProduct("book", 17.99, 1);
-        data.addProduct("pencil", 2.99, 3);
-        output();
-    }
-
-    public void testcase3() {
-        data.prepare();
-        data.setTargetLocation(data.searchLocations("NY"));
-        data.addProduct("pencil", 2.99, 2);
-        data.addProduct("shirt", 29.99, 1);
-        output();
+    public static void main(String[] args) {
+        new Game().start();
     }
 }
